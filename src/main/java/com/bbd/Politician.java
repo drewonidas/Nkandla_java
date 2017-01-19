@@ -10,6 +10,6 @@ public class Politician extends Person implements IVisitor {
 
     public void visit(HomeStead home) {
         if (!super.getType().equals(personType.President))
-            throw new RuntimeException("nah nigga!!");
+            throw new RuntimeException("Beach Please!!");
     }
 }
