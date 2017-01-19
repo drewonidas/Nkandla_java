@@ -5,7 +5,7 @@ import static java.sql.Types.NULL;
 /**
  * Created by bbdnet1574 on 2017/01/18.
  */
-public abstract class HomeStead {
+public class HomeStead {
     private String Name;
     private String District;
     private String Province;
@@ -61,8 +61,6 @@ public abstract class HomeStead {
     }
 
     public void accept(IVisitor visitor) {
-        //code here
-        //TODO: add implementation
         if (!visitor.equals(NULL))
             visitor.visit(this);
     }
